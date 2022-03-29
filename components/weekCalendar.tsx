@@ -1,5 +1,5 @@
 import useSwr from 'swr';
-import {ContextEventsDetails, EventDetails} from '../pages/api-types/weekResponse';
+import {ContextEventsDetails, EventDetails} from '../api-types/weekResponse';
 import moment from 'moment';
 import {useState} from 'react';
 import DayDetails from './dayDetails';

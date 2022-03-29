@@ -1,4 +1,4 @@
-import {EventDetails} from '../pages/api-types/weekResponse';
+import {EventDetails} from '../api-types/weekResponse';
 import _ from 'lodash';
 
 function getDetails (location ?: string, notes ?: string): string {
