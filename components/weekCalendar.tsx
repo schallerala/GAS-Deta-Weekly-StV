@@ -69,7 +69,10 @@ const WeekCalendar = () => {
                     }}>{'<-'}</button>
 
                     <button disabled={thisWeek}
-                            onClick={() => setContextDate(undefined)}>
+                            onClick={() => {
+                                setSelectedDate(undefined)
+                                setContextDate(undefined)
+                            }}>
                         Today
                     </button>
 
