@@ -17,11 +17,13 @@ export const Details = ({
     date,
     organizationsDetails = []
 }: DetailsProps) => {
-    if ((organizationsDetails?.length || 0) == 0)
+    if ( ! organizationsDetails || (organizationsDetails.length || 0) == 0)
         return (<div>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             <span className={styles.noDetails}>Pas d'événements le {date}</span>
         </div>)
+
+    organizationsDetails = organizationsDetails.sort((org1, org2) => org1.organizationName.localeCompare(org2.organizationName));
 
     return (
         <div>
