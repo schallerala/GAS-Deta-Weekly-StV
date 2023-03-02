@@ -56,7 +56,7 @@ const mapEventDetails = (events: EventDetails[]) : OrganizationProps[] => {
 
 const WeekCalendar = () => {
     const [contextDate, setContextDate] = useState<ContextEventsDetails['previous']>();
-    const [selectedDate, setSelectedDate] = useState<string>();
+    const [selectedDate, setSelectedDate] = useState<string>(moment().format('YYYY-MM-DD'));
 
     const thisWeek = !contextDate;
 
