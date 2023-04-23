@@ -13,7 +13,7 @@ export default async function handler(
             : '';
         const response = await fetch(`${process.env.API_WEEKLY_PATH!}${queryParams}`, {
             headers: {
-                'X-API-Key': process.env.API_KEY!
+                'X-Space-App-Key': process.env.API_KEY!
             }
         });
 
